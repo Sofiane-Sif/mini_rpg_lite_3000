@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rpgjfx.Controllers.GameRulesController">
+   <children>
+      <ImageView fitHeight="1216.0" fitWidth="1332.0" layoutX="-369.0" layoutY="-200.0">
+         <image>
+            <Image url="@images/parchemin2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="23.0" layoutY="65.0" prefHeight="121.0" prefWidth="550.0" text="Bienvenue dans Mini RPG Lite 3000.  Êtes-vous une bande de jeunes héros prêts à relever tous les défis ? C'est parti !  Votre objectif est de vaincre tous vos ennemis. Chaque combat gagné vous fait progresser et affronter des monstrers encore plus terrifiants." textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font name="Bangla MN" size="13.0" />
+         </font></Label>
+      <Label layoutX="13.0" layoutY="208.0" prefHeight="265.0" prefWidth="550.0" text="Au début d'une partie, on choisit la classe de nos héros : ils peuvent être Hunter, Warrior, Mage ou Healer. Chaque héros possède une arme et une armure, ainsi que des potions et de la nourriture. Une partie se comporte de 5 combats, jusqu’à affronter le boss au cinquième combat si vous survivez. Pendant un combat, vous controlez tour à tour chacun de vos héros ; vous pouvez décider d’attaquer, de vous défendre, ou bien même d’utiliser un consommable, comme manger du lembas, ou bien boire une potion pour restaurer la mana des lanceurs de sorts. Chaque classe a des attaques différentes. Le Hunter tire des flèches (jusqu’à n’en plus avoir), leWarrior frappe au corps à corps, le Healer soigne avec des sorts tandis que le Mage utilise la magie contre les ennemis" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font name="Bangla MN" size="11.0" />
+         </font>
+      </Label>
+      <Button layoutX="13.0" layoutY="642.0" mnemonicParsing="false" onAction="#lanceWin2" prefHeight="26.0" prefWidth="77.0" text="Next">
+         <font>
+            <Font size="11.0" />
+         </font></Button>
+      <Button layoutX="510.0" layoutY="642.0" mnemonicParsing="false" onAction="#lanceHello" prefHeight="26.0" prefWidth="77.0" text="Previous">
+         <font>
+            <Font size="11.0" />
+         </font></Button>
+      <Label layoutX="16.0" layoutY="471.0" prefHeight="36.0" prefWidth="513.0" text="Si l’équipe gagne un combat, chaque personnage peut choisir entre plusieurs options :" wrapText="true">
+         <font>
+            <Font name="Bangla MN" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="515.0" prefHeight="36.0" prefWidth="244.0" text="1- Augmenter les dégâts que l'on cause" wrapText="true">
+         <font>
+            <Font name="Bangla MN" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="543.0" prefHeight="36.0" prefWidth="244.0" text="2- Augmenter la résistance aux attaques" wrapText="true">
+         <font>
+            <Font name="Bangla MN" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="568.0" prefHeight="36.0" prefWidth="432.0" text="3- Augmenter le nombre des flèches (Hunter) et la Mana (SpellCaster)" wrapText="true">
+         <font>
+            <Font name="Bangla MN" size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

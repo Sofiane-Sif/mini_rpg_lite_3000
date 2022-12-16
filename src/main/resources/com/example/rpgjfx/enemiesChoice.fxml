@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="486.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rpgjfx.Controllers.EnemiesChoiceController">
+   <children>
+      <ImageView fitHeight="505.0" fitWidth="916.0" layoutX="-7.0" layoutY="-4.0">
+         <image>
+            <Image url="@images/enemies_background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="168.0" fitWidth="111.0" layoutX="1.0" layoutY="65.0" onMouseEntered="#handleMouseEntered1" onMouseExited="#handleMouseExited1">
+         <image>
+            <Image url="@images/dragon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="189.0" fitWidth="147.0" layoutX="1.0" layoutY="264.0" onMouseEntered="#handleMouseEntered2" onMouseExited="#handleMouseExited2">
+         <image>
+            <Image url="@images/orc.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="172.0" fitWidth="147.0" layoutX="299.0" layoutY="221.0" onMouseEntered="#handleMouseEntered3" onMouseExited="#handleMouseExited3">
+         <image>
+            <Image url="@images/tauren.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="230.0" fitWidth="170.0" layoutX="727.0" layoutY="255.0" onMouseEntered="#handleMouseEntered4" onMouseExited="#handleMouseExited4">
+         <image>
+            <Image url="@images/boss.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="223.0" layoutY="6.0" prefHeight="36.0" prefWidth="466.0" text="La Horde des Ennemis" textFill="WHITE">
+         <font>
+            <Font name="Copperplate" size="37.0" />
+         </font>
+      </Label>
+      <Button layoutX="851.0" layoutY="5.0" mnemonicParsing="false" onAction="#lanceHerosChoice" prefHeight="22.0" prefWidth="57.0" text="Previous">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button layoutY="5.0" mnemonicParsing="false" onAction="#lanceFightWindow" prefHeight="22.0" prefWidth="57.0" text="Next">
+         <font>
+            <Font size="11.0" />
+         </font></Button>
+      <Label fx:id="label1" layoutX="106.0" layoutY="64.0" prefHeight="95.0" prefWidth="193.0" text="Les dragons sont réputés pour avoir sale caractère... lls crachent d'impressionnants jets de flammes, et leurs ailes leurs permettent de se déplacer rapidement" textAlignment="CENTER" textFill="WHITE" visible="false" wrapText="true">
+         <font>
+            <Font name="Hoefler Text" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="143.0" layoutY="216.0" prefHeight="146.0" prefWidth="164.0" text="Les sauvages Orcs à la peau verte sont l'une des races les plus prolifiques du Royaume. Ils sont généralement réputés pour leur brutalité et leur manque d'intelligence, ne possédant aucune humanité ou sympathie pour les autres races." textAlignment="CENTER" textFill="WHITE" visible="false" wrapText="true">
+         <font>
+            <Font name="Hoefler Text" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="label3" layoutX="363.0" layoutY="80.0" prefHeight="160.0" prefWidth="183.0" text="Les Taurens sont des créatures énormes et bestiales qui vivent le plus souvent dans les grottes du Royaume. Lors des combats, les Taurens sont des combattants implacables qui utiliseront toute leur force pour écraser leurs ennemis." textAlignment="CENTER" textFill="WHITE" visible="false" wrapText="true">
+         <font>
+            <Font name="Hoefler Text" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="label4" layoutX="744.0" layoutY="121.0" prefHeight="136.0" prefWidth="164.0" text="Le BOSS est le plus redoutable des adversaires. Son armure fait qu'il est particulièrement difficile à battre. Il dispose de nombreuses armes aussi dangeureuses les unes que les autres !" textAlignment="CENTER" textFill="WHITE" visible="false" wrapText="true">
+         <font>
+            <Font name="Hoefler Text" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

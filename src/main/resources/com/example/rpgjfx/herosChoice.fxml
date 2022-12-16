@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rpgjfx.Controllers.HerosChoiceController">
+   <children>
+      <ImageView fitHeight="815.0" fitWidth="1369.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/fond_team.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="172.0" fitWidth="122.0" layoutX="38.0" layoutY="85.0" onMouseClicked="#inputAreaAppear" onMouseEntered="#handleMouseEntered1" onMouseExited="#handleMouseExited1">
+         <image>
+            <Image url="@images/warrior.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="172.0" fitWidth="122.0" layoutX="251.0" layoutY="85.0" onMouseClicked="#inputAreaAppear1" onMouseEntered="#handleMouseEntered2" onMouseExited="#handleMouseExited2">
+         <image>
+            <Image url="@images/hunter.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="172.0" fitWidth="122.0" layoutX="453.0" layoutY="90.0" onMouseClicked="#inputAreaAppear2" onMouseEntered="#handleMouseEntered3" onMouseExited="#handleMouseExited3">
+         <image>
+            <Image url="@images/mage.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="172.0" fitWidth="110.0" layoutX="660.0" layoutY="90.0" onMouseClicked="#inputAreaAppear3" onMouseEntered="#handleMouseEntered4" onMouseExited="#handleMouseExited4">
+         <image>
+            <Image url="@images/healer.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="label1" layoutX="41.0" layoutY="267.0" prefHeight="91.0" prefWidth="150.0" text="Le Warrior est un valeureux guerrier. Il aime le contact, c'est un véritable dûr à cuire ! Il frappe ses ennemis au corps à corps." textAlignment="JUSTIFY" textFill="WHITE" visible="false" wrapText="true">
+         <font>
+            <Font name="Hoefler Text" size="12.0" />
+         </font></Label>
+      <Label fx:id="label2" layoutX="223.0" layoutY="265.0" prefHeight="92.0" prefWidth="178.0" text="Le Hunter est abile. Il manie ses arcs comme personne d'autres. Ses flèches infligent de lourds dégâts aux ennemis. Mais attention, il en a un nombre limité...." textAlignment="JUSTIFY" textFill="WHITE" visible="false" wrapText="true">
+         <font>
+            <Font name="Hoefler Text" size="12.0" />
+         </font></Label>
+      <Label fx:id="label3" layoutX="452.0" layoutY="265.0" prefHeight="93.0" prefWidth="161.0" text="Les Mages sont une puissance race mystique dont les origines remontent aux temps anciens. Ils utilisent la magie et les sorts contre les ennemis." textAlignment="JUSTIFY" textFill="WHITE" visible="false" wrapText="true">
+         <font>
+            <Font name="Hoefler Text" size="12.0" />
+         </font></Label>
+      <Label fx:id="label4" layoutX="642.0" layoutY="267.0" prefHeight="72.0" prefWidth="150.0" text="Les Healer sont les gardiens de votre équipe. Ils soignent les héros et sont souvent décisifs durant les combats !" textAlignment="JUSTIFY" textFill="WHITE" visible="false" wrapText="true">
+         <font>
+            <Font name="Hoefler Text" size="12.0" />
+         </font></Label>
+      <Button layoutX="720.0" layoutY="12.0" mnemonicParsing="false" onAction="#lanceExplication" prefHeight="20.0" prefWidth="71.0" text="Previous">
+         <font>
+            <Font size="11.0" />
+         </font></Button>
+      <Label layoutX="146.0" layoutY="11.0" prefHeight="41.0" prefWidth="443.0" text="Composez votre équipe" textFill="WHITE">
+         <font>
+            <Font name="Copperplate" size="37.0" />
+         </font>
+      </Label>
+      <Pane layoutX="18.0" layoutY="355.0" prefHeight="132.0" prefWidth="180.0">
+         <children>
+            <Label fx:id="labelTextArea" layoutX="7.0" layoutY="4.0" onMouseClicked="#inputAreaAppear" prefHeight="47.0" prefWidth="168.0" text="Quel nom souhaitez-vous pour votre Warrior ?" textAlignment="CENTER" textFill="WHITE" visible="false" wrapText="true">
+               <font>
+                  <Font name="Copperplate" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textArea" layoutX="12.0" layoutY="67.0" onAction="#heroName1" onMouseClicked="#inputAreaAppear" visible="false" />
+         </children>
+      </Pane>
+      <Pane layoutX="223.0" layoutY="355.0" prefHeight="132.0" prefWidth="180.0">
+         <children>
+            <Label fx:id="labelTextArea1" layoutX="7.0" layoutY="4.0" onMouseClicked="#inputAreaAppear1" prefHeight="47.0" prefWidth="168.0" text="Quel nom souhaitez-vous pour votre Hunter ?" textAlignment="CENTER" textFill="WHITE" visible="false" wrapText="true">
+               <font>
+                  <Font name="Copperplate" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textArea1" layoutX="12.0" layoutY="67.0" onAction="#heroName2" onMouseClicked="#inputAreaAppear1" visible="false" />
+         </children>
+      </Pane>
+      <Pane layoutX="420.0" layoutY="355.0" prefHeight="132.0" prefWidth="180.0">
+         <children>
+            <Label fx:id="labelTextArea2" layoutX="7.0" layoutY="4.0" onMouseClicked="#inputAreaAppear2" prefHeight="47.0" prefWidth="168.0" text="Quel nom souhaitez-vous pour votre Mage ?" textAlignment="CENTER" textFill="WHITE" visible="false" wrapText="true">
+               <font>
+                  <Font name="Copperplate" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textArea2" layoutX="12.0" layoutY="67.0" onAction="#heroName3" onMouseClicked="#inputAreaAppear2" visible="false" />
+         </children>
+      </Pane>
+      <Pane layoutX="618.0" layoutY="355.0" prefHeight="132.0" prefWidth="180.0">
+         <children>
+            <Label fx:id="labelTextArea21" layoutX="7.0" layoutY="4.0" onMouseClicked="#inputAreaAppear3" prefHeight="47.0" prefWidth="168.0" text="Quel nom souhaitez-vous pour votre Healer ?" textAlignment="CENTER" textFill="WHITE" visible="false" wrapText="true">
+               <font>
+                  <Font name="Copperplate" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textArea21" layoutX="12.0" layoutY="67.0" onAction="#heroName4" onMouseClicked="#inputAreaAppear3" visible="false" />
+         </children>
+      </Pane>
+      <Button layoutX="8.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#lanceEnemiesWin" prefHeight="20.0" prefWidth="71.0" text="Next">
+         <font>
+            <Font size="11.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
