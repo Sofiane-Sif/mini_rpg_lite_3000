@@ -7,4 +7,19 @@ Une interface graphique a été mise en place, mais la logique du jeu n'a malheu
 
 Les règles du jeu peuvent être consultées dans le fichier (RPG_rules.pdf).
 
-Ci-dessous, voici toutes les 
+Vous trouverez ci-dessous les paramètres du jeu : 
+
+--------------------------------------- Les Ennemis --------------------------------------------------------
+
+Dragon : HP (5) | DamagePoints (3)
+Orc : HP (6) | DamagePoints (3)
+Tauren : HP (5) | DamagePoints (4)
+Troll : HP (6) | DamagePoints (4)
+BOSS : HP (10) | DamagePoints (6)
+
+--------------------------------------- Les Héros --------------------------------------------------------
+
+Warrior : Frappe au corps à corps
+Hunter : Utilise les flèches contre les ennemis (arrowsNumber = 8)
+Mage : Utilise les sorts contre les ennemies (Mana = 8)
+Healer : Soigne les autres héros de son équipe (Mana = 10 | Soigne de 3 Hp le héros sélectionné)
