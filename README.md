@@ -5,7 +5,7 @@ Les règles du jeu peuvent être consultées dans le fichier (RPG_rules.pdf).
 
 #
 #
-Vous trouverez ci-dessous les paramètres du jeu : 
+Vous trouverez ci-dessous les attributs et caractéristiques de chaque classe du jeu : 
 
 
 
